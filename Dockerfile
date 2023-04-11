@@ -16,6 +16,13 @@ COPY trojan-go-server.json /etc/
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
+# 添加密钥
+COPY www.pem /usr/local/share/ca-certificates/trojan-go.pem
+COPY www.key /usr/local/share/ca-certificates/trojan-go.key
+RUN chmod 644 /usr/local/share/ca-certificates/trojan-go.*
+
+
+
 # 暴露端口
 EXPOSE 443/tcp 80/tcp
 

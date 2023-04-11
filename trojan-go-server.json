@@ -1,0 +1,15 @@
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "0.0.0.0",
+    "remote_port": 1080,
+    "password": [
+        "iloveyou"
+    ],
+    "ssl": {
+        "cert": "/usr/local/share/ca-certificates/trojan-go.pem",
+        "key": "/usr/local/share/ca-certificates/trojan-go.key",
+        "sni": "tro.toko.work"
+    }
+}
