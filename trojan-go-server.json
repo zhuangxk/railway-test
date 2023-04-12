@@ -10,6 +10,6 @@
     "ssl": {
         "cert": "/usr/local/share/ca-certificates/trojan-go.pem",
         "key": "/usr/local/share/ca-certificates/trojan-go.key",
-        "sni": "tro.toko.work"
+        "sni": "rail.toko.work"
     }
 }
